@@ -1,0 +1,21 @@
+-- Haskell Playground 1.0
+
+import Data.List
+
+
+
+namesFile = "bob sally joe alex"
+
+:t break
+:t filter 
+
+isSpace c = c == ' '
+
+break isSpace namesFile
+
+words namesFile
+
+students = initStudents $ words namesFile
+show students
+
+head students

@@ -1,0 +1,23 @@
+cabal-version: 2.4
+name: Examples
+version: 1.0
+stability: experimental
+x-ghc-framework-version: 8.6.4-13.14-3
+x-last-ide-version: HfM1.8.2
+
+executable Examples
+    main-is: Main.hs
+    other-modules:
+        Game_of_Life
+        FizzBuzz
+        Quicksort_1
+        Students
+        Exercises
+        Scratch
+        Arith3Broken
+        Sing
+        OrgTree
+    default-language: Haskell2010
+    build-depends:
+        array -any,
+        base -any

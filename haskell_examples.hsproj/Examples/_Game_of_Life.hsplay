@@ -1,0 +1,56 @@
+-- Haskell Playground 1.0
+
+cellStatus grid 0 0
+cellStatus grid 2 2
+cellStatus grid 4 4
+
+cellStatus grid 2 3 
+ 
+
+map (cellStatus grid 0) [0..4]
+
+rowStatus grid [0..4] 2
+
+newRow grid [0..4] 1
+
+map (newRow grid [0..4]) [0..4]
+
+zip [-1..1] [-1..1]
+
+
+gLookup grid 4 4 (1, 1)
+
+
+putRow [0..5]
+putStrLn " "
+
+putGrid grid
+
+g2 = newGrid grid
+putGrid g2
+
+
+r = rowStatus g2 [0..4] 1
+
+r
+
+isLive (1,5)
+
+map isLive r
+
+newRow g2 [0..4] 0
+newRow g2 [0..4] 1
+newRow g2 [0..4] 2
+newRow g2 [0..4] 3
+newRow g2 [0..4] 4
+
+
+
+
+
+
+
+--runGame grid
+
+yr = [0 .. length grid]
+xr = [0 .. length (head grid)]

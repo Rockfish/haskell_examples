@@ -1,0 +1,111 @@
+-- Haskell Playground 1.0
+
+head [(0,"doge"),(1,"kitteh")]
+head [(0 :: Integer ,"doge"),(1,"kitteh")]
+
+x=5 
+y=x+5
+z y = y * 10
+
+
+bigNum = (^) 5 $ 10 
+:i bigNum
+
+show bigNum
+
+
+wahoo = bigNum + 1
+
+x = print
+y = print "woohoo!" 
+z = x "hello world"
+
+a = (+) 
+b = 5
+c = a 10 
+
+
+
+:i Fractional
+
+:t mTh
+
+foo = mTh 3.0
+
+:t foo
+
+odd 3
+addOneIfOdd 3
+
+:t addFiveL
+
+user = RegisteredUser 
+  (Username "Sam")
+  (AccountNumber 53)
+
+printUser user
+
+
+p = Peng Australia
+p
+
+
+
+
+penguinType (Peng SouthAfrica)
+
+k ((4-1), 10)
+
+compare 0 0
+compare Australia SouthAfrica
+
+
+
+avgGrade 58
+
+h 1
+
+
+take 5 . filter odd . enumFrom $ 3
+
+take 5 ( filter odd (enumFrom 3))
+
+fn = negate . sum . take 5
+fn [1..]
+
+
+
+foldr ri 0 ["1", "2", "3"]
+
+filter isNum ['0' .. 'z']
+
+:i IO
+
+
+div 165 10
+mod 16 10
+
+(mod10 . div10) 165
+tensD 165
+
+
+:t divMod
+
+
+roundTrip 4
+
+
+:t humboldt
+
+penguinType gentoo
+
+
+
+
+
+
+
+
+
+
+

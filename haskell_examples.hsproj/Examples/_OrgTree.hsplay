@@ -1,0 +1,98 @@
+-- Haskell Playground 1.0
+
+
+sally = Employee {
+        employeeName = "sally", 
+        employeeReports = [] 
+       }
+
+fred = Employee {
+        employeeName = "fred", 
+        employeeReports = [] 
+       }
+
+sam = Employee "sam" []
+alex = Employee "alex" []
+
+george = Employee {
+        employeeName = "george", 
+        employeeReports = [ sam, alex ] 
+       }
+
+susan = Employee {
+        employeeName = "susan", 
+        employeeReports = [] 
+       }
+
+joe = Employee {
+        employeeName = "joe", 
+        employeeReports = [ sally, 
+                    fred, 
+                    george, 
+                    susan ]
+
+       }
+
+
+
+:t reports
+
+employeeReports joe
+
+countEmp joe
+
+countEmp george
+
+
+
+foldl (_findEmp "sam") Nothing [Just joe]
+foldl (_findEmp "sam") Nothing [Nothing]
+
+findEmp "alex" joe
+
+map Just $ employeeReports joe
+
+map Just []
+
+
+j2 = addEmp4 "hank" "susan" joe
+
+countEmp j2
+
+ceo = Employee "joe" []
+
+foldl addEmp ceo org
+
+newceo = newOrg ceo org
+
+countEmp newceo
+
+(employeeReports newceo) !! 0
+
+printOrg " " newceo
+
+ceo2 = addEmp4 "hank" "susan" newceo
+
+printOrg "" ceo2
+
+findEmpGo2 "hank" ceo2
+
+:t concat
+
+:info concat
+
+concat [[1,2,3], [1,2,3]] 
+:t Just
+
+concat $ Just ["wild", "cat"]
+
+x = [(Just ["wild", "cat"]), (Just ["mad", "dog"])]
+map concat x
+
+concat Nothing
+
+
+
+
+
+

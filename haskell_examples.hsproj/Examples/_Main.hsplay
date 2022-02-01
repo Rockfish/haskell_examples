@@ -1,0 +1,141 @@
+-- Haskell Playground 1.0
+sayHello "You"
+
+rem 5 6
+(div 5 6) + (rem 5 6)
+
+subtract 2 3 -- sub this from that
+             -- allows currying
+
+nums = [fizzBuzz x | x <- [0..16]]
+map fizzBuzz [0..16]
+
+
+printInc n = print plusTwo
+  where plusTwo = n + 2
+
+printInc 10
+
+
+:type m
+:t "sdfjlsdjf"
+
+l = ['h', 'e', 'y']
+l == "hey"
+concat [['h', 'e', 'y'], [' '], "you"]
+'h' : "ey"
+
+:i filter
+
+
+a = (1, 3)
+fst a
+snd a
+:i splitAt
+:i partition
+
+ll = [[1,2,3], [4], [5, 6, 7]]
+
+ns = [10, 38, 3, 6, 1, 43]
+
+p = partition (<7) ns
+
+fst p
+
+966514 - 798679
+1035079 - 869952
+167835 - 165127
+
+1035079 - 966514
+
+v = Just "Hey!"
+v' = Nothing
+
+showValue v
+showValue v'
+
+:i Int
+:i Double
+:i v
+
+:i Either
+
+r1 = Left "not found"
+r2 = Right 5
+
+:i Item
+
+-- safeShow (toInteger 42)
+-- safeShow "sdlfh"
+
+ss = String "Hello"
+si = 34
+si
+
+show ss
+
+safeShow ss
+
+
+safeShow $ String "hey!"
+safeShow $ Integer 42
+
+:t String
+
+:t "hey"
+
+
+process r2 
+
+f :: a -> a -> a -> a; f = undefined
+x :: Char; x = undefined
+
+ff = f x
+
+:t ff 'a' 'b'
+
+g :: a -> b -> c -> b; g = undefined
+gg = g 0 'c' "woot" 
+:t gg
+
+n :: (Num a, Num b) => a -> b -> b; n = undefined
+
+:t n 1.2 3
+:t n 1 (5.5 :: Double)
+
+jackal :: (Ord a, Eq b) => a -> b -> a; jackal = undefined
+:t jackal "key" "has jac in it"
+:t jackal "keyboard"
+
+kessel :: (Ord a, Num b) => a -> b -> a; kessel = undefined
+:t kessel 3 (5 :: Integer)
+
+
+:t id
+id "fifty"
+
+:t (++)
+mcat x y = x ++ y
+:t mcat
+
+mcat "1" "2"
+
+myMult x = (x / 3) * 5
+
+
+
+:t ss
+
+
+
+
+
+
+
+
+
+
+
+
+
+

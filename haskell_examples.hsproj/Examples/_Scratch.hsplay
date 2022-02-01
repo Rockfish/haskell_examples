@@ -1,0 +1,14 @@
+-- Haskell Playground 1.0
+
+
+--join 1 [-1..1]
+
+j2 [-1..1] 1
+
+map (j2 [-1..1]) [-1..1]
+
+:t (j2 [-1..1])
+
+combine [-1..1] [1..13]
+
+:t combine

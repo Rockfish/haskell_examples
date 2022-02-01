@@ -1,0 +1,125 @@
+-- Haskell Playground 1.0
+
+x = negate (-1)
+:t main
+
+y = main
+
+:t y
+
+True > False
+
+max False True
+
+a = read "True"
+
+:i Trival
+
+b = Trival' 
+
+:i b
+
+
+Wed == Wed
+
+:i Date
+
+d = Date Mon 3
+d' = Date Tue 3
+d == d'
+
+Date Wed 5
+
+Identity 5 == Identity 5
+Identity "foo" == Identity "bar"
+
+a = Identity "dogs"
+
+p = MyPair 1 "dog"
+p' = MyPair 1 "dog"
+p == p'
+
+pp = MyPair "rabbit" "many"
+pp' = MyPair "rabbit" "many"
+pp == pp'
+
+t = TisAn 5
+:t t
+
+e = Hello 1
+e' = Hello "dog"
+:t e
+
+ee = Goodbye "foo"
+
+ones x = snd (divMod x 10)
+divMod 33 10
+
+fa = FooData 5
+fb = FooData 7
+
+fa %% fb
+
+let add = (+) :: Integer -> Integer -> Integer
+add 4 5
+
+
+
+:i print
+
+
+show fa
+
+fa
+
+:i read
+
+fromNumber 4 :: Age
+fromNumber 5 :: Year
+
+addNumberish (fromNumber 4 :: Age) (fromNumber 5 :: Year)
+
+-- dd = divMod 16.0 / 12.0
+
+
+:t idOne
+
+b = Empty
+
+
+:t settleDown
+
+show s2
+
+comparePapus truth consequence
+
+show 2
+
+(a, b) = quotRem 11 2
+a
+b
+
+:t bitCount
+
+bitCount 255
+bitCount (2^32 - 1)
+bitCount (2^64 - 1)
+bitCount (2^128 - 1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
