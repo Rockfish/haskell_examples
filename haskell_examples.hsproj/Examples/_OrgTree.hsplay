@@ -43,17 +43,11 @@ countEmp joe
 
 countEmp george
 
-
-
-foldl (_findEmp "sam") Nothing [Just joe]
-foldl (_findEmp "sam") Nothing [Nothing]
-
 findEmp "alex" joe
 
 map Just $ employeeReports joe
 
 map Just []
-
 
 j2 = addEmp4 "hank" "susan" joe
 
@@ -61,21 +55,19 @@ countEmp j2
 
 ceo = Employee "joe" []
 
-foldl addEmp ceo org
+foldl addEmp ceo orgList
 
-newceo = newOrg ceo org
+org = addEmployees ceo orgList
 
-countEmp newceo
+countEmp org
 
-(employeeReports newceo) !! 0
+printOrg org
 
-printOrg " " newceo
+org2 = addEmp4 "hank" "susan" org
 
-ceo2 = addEmp4 "hank" "susan" newceo
+printOrg org2
 
-printOrg "" ceo2
-
-findEmpGo2 "hank" ceo2
+findEmp "hank" org2
 
 :t concat
 
